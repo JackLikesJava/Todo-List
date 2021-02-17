@@ -20,6 +20,10 @@ form {
     justify-content: center;
     align-items: center;
 }
+button {
+    background-image: linear-gradient(120deg, #0b690b,#145314, #014421, #002d0b, #001800);
+
+}
 
 form input, 
 form button {
@@ -38,4 +42,8 @@ form button{
 form button:hover{
     background: #002d0b;
     color: white;
+}
+
+button {
+    background-image: linear-gradient(120deg, #313531,#145314, #014421, #002d0b, #001800);
 }
