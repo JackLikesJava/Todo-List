@@ -11,7 +11,7 @@ todoButton.addEventListener('click', addToDo);
 //Functions
 
 function addToDo(event) {
- 
+ console.log("i clicked inside of here");
 //Prevent form from submitting
 
 event.preventDefault();
@@ -24,7 +24,7 @@ event.preventDefault();
  //Create LI
 
  const newTodo = document.createElement('li');
- newTodo.innerText = 'hey';
+ newTodo.innerText = event.target.value;
  newTodo.classList.add('todo-item');
  todoDiv.appendChild(newTodo);
 
@@ -37,9 +37,9 @@ event.preventDefault();
 
  //Deleted Button
 
- const deleteButton = document.createElement('button')
+ const deleteButton = document.createElement('button');
  deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
- deleteButton.classList.add(completed-btn);
+ deleteButton.classList.add("completed-btn");
  todoDiv.appendChild(deleteButton);
  //APPEND TO LIST
  todoList.appendChild(todoDiv);
